@@ -120,14 +120,14 @@ def word_cloud_ykp(path, text_in_name, figure_in_name, text_out_name, figure_out
 
 
 def main():
-    path = os.getcwd()+"\\"
-    text_in_name = '01.TextIn_BigData.txt'
-    figure_in_name = 'github_brand.png'
-    text_out_name = "01.TextIn_BigData(Clean).txt"
-    figure_out_name = "词云图.png"
-    stopwords_text_name = "00.Stopwords.2018.12.14.txt"
-    max_words_num = 200
-    words_stat_name = "词云统计表.xlsx"
+    path = os.getcwd()+"\\"  # Python file location.
+    text_in_name = '01.TextIn_BigData.txt'  # Input original text filename.
+    figure_in_name = 'github_brand.png'  # Input original figure filename.
+    text_out_name = "01.TextIn_BigData(Clean).txt"  # Output cleaned text filename.
+    figure_out_name = "词云图.png"  # Output word cloud figure filename.
+    stopwords_text_name = "00.Stopwords.2018.12.14.txt"  # Input stopwords text filename.
+    max_words_num = 200  # Maximized number of key words in word cloud.
+    words_stat_name = "词云统计表.xlsx"  # Output word stat excel filename.
     word_cloud_ykp(path, text_in_name, figure_in_name,
                    text_out_name, figure_out_name,
                    stopwords_text_name, max_words_num, words_stat_name)
